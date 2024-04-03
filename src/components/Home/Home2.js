@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/app.png";
 import Tilt from "react-parallax-tilt";
+import Sec from "./Section";
+
 import {
     AiFillGithub,
  
@@ -9,52 +11,23 @@ import {
 } from "react-icons/ai";
 
 import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
+import content from './content.json';
+
+
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
-          <Col md={7} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-            Hirsch Straps By WatchObsession
-            </h1>
-            <p className="home-about-body">
-             
-             
-              <br />The Cutting-Edge SastanaSmart Sensor
-Discover the heart of innovation with the 
-SastanaSmart sensor. Engineered for 
-precision and reliability, this cutting-edge 
-technology captures essential data to enhance 
-your daily life.
-<br />
-<br /> With its advanced capabilities, 
-the SastanaSmart <i>
-                <b className="purple">sensor</b>
-              </i> is designed to 
-seamlessly integrate into your lifestyle, 
-providing insights and functionalities that 
-propel you towards  a smarter, more 
-connected future
-<br /><br />
-Enjoy the precision of cutting-edge 
-GPS technology with the Sastasmart 
-sensor, ensuring unparalleled 
-navigation and security for every 
-user
-              <i>
-                <b className="purple"> C++, Javascript and Solidity. </b>
-              </i>
-             
-            </p>
-          </Col>
-          <Col md={5} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
-        </Row>
+      {content.map((section, index) => (
+        <Sec 
+          key={index}
+          order={section.order} 
+          paragraph={section.paragraph} 
+          image={require(`../../Assets/${section.image}`)}
+          title={section.title}
+        />
+      ))}
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>

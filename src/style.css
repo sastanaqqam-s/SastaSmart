@@ -768,3 +768,20 @@ button:focus {
 .card1-content{
   
 }
+
+.order-md-1 {
+  order: 1;
+}
+
+.order-md-2 {
+  order: 2;
+}
+
+@media (max-width: 767px) {
+  .order-md-1,
+  .order-md-2 {
+    order: 1; /* Reset order to 1 for all columns */
+  }
+
+ 
+}
