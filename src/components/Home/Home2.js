@@ -1,4 +1,4 @@
-import React from "react";
+import {React } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/app.png";
 import Tilt from "react-parallax-tilt";
@@ -16,6 +16,7 @@ import content from './content.json';
 
 
 function Home2() {
+  
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>

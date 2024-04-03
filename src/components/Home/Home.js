@@ -9,6 +9,7 @@ import { BsApple } from "react-icons/bs";
 
 import HomeImage3D from "./HomeImage3D";
 import { DiAndroid } from "react-icons/di";
+
 function Home() {
   return (
     <section>
