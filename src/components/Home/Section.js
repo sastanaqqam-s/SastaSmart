@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt";
 
 const Section = ({ order, paragraph, image,title }) => {
   return (
-    <Row>
+    <Row className="section-images">
       <Col md={7} className={order === 0 ? "order-md-1" : "order-md-2"}>
         <h1 style={{ fontSize: "2.6em" }}>
           {title}
