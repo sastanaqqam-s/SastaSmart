@@ -278,7 +278,17 @@ button:focus {
  /* clip-path: polygon(0% 0%, 100% 0%, 100% 96%, 65% 96%, 50% 100%, 35% 96%, 0% 96%);*/
   @media (max-width: 768px) {
  /* Set width to 100% for screens with max-width of 768px (adjust as needed) */
-    height: 100vh;
+    
+    position: initial;
+    
+    background-position: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    padding-bottom: initial;
+    padding-top: initial;
+    height: initial;
+    box-shadow: initial;
+    
   }
 
 
