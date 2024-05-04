@@ -46,7 +46,7 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20}} className="mobile-min-height">
           
-                  <HomeImage3D />
+               
                   
             </Col>
           
