@@ -1,0 +1,33 @@
+/* faq.css */
+
+/* Style for the container of each FAQ item */
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+/* Style for the button containing the question */
+.faq-question-button {
+  background-color: red;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+}
+
+/* Style for the answer container */
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+/* Apply a maximum height of 0 to hide the answer */
+.max-h-0 {
+  max-height: 0;
+}
+
+/* Apply a maximum height of none to show the answer */
+.max-h-full {
+  max-height: none;
+}

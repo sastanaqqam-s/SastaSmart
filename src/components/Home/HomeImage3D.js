@@ -1,7 +1,7 @@
 import React, { Suspense, useState, useEffect, useRef, useCallback } from 'react';
 import { Canvas } from 'react-three-fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { DirectionalLight } from 'three';
+import { DirectionalLight, AmbientLight, Color } from 'three'; // Import AmbientLight for adding ambient light
 
 function HomeImage3D() {
   const [model, setModel] = useState(null);
@@ -9,7 +9,7 @@ function HomeImage3D() {
   const [interactionStart, setInteractionStart] = useState(false);
   const [prevTouch, setPrevTouch] = useState({ x: null, y: null });
   const [scaleFactor, setScaleFactor] = useState(50.0);
-  const gltfPath = 'w.glb'; 
+  const gltfPath = 's.glb'; 
   const canvasRef = useRef();
 
   const handleInteractionStart = useCallback((event) => {
@@ -53,11 +53,21 @@ function HomeImage3D() {
       gltfPath,
       (gltf) => {
         const width = window.innerWidth;
-        const newScaleFactor = width < 768 ? 40.0 : 52.0;
+        const newScaleFactor = width < 768 ? 40.0 : 36.0;
         setScaleFactor(newScaleFactor);
 
         gltf.scene.scale.set(newScaleFactor, newScaleFactor, newScaleFactor);
         gltf.scene.position.set(0, -2, 0);
+
+        // Adjust lighting
+        const directionalLight = new DirectionalLight(new Color("#ffffff"), 6); // Set directional light color to white
+        directionalLight.position.set(15, 0, 40);
+        gltf.scene.add(directionalLight);
+
+        // Add ambient light
+        const ambientLight = new AmbientLight(0x404040); // Soft white ambient light
+        gltf.scene.add(ambientLight);
+
         setModel(gltf.scene);
       },
       undefined,
@@ -77,8 +87,6 @@ function HomeImage3D() {
       onMouseUp={handleInteractionEnd}
       onMouseMove={handleInteractionMove}
     >
-      <directionalLight intensity={1} position={[0, 5, 5]} />
-      <ambientLight intensity={0.6} />
       <Suspense fallback={null}>
         {model && (
           <primitive object={model} rotation={[rotation.x, rotation.y, 0]} />

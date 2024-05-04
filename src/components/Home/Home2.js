@@ -1,9 +1,10 @@
 import {React } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/app.png";
-import Tilt from "react-parallax-tilt";
-import Sec from "./Section";
 
+import Sec from "../utils/Section";
+
+
+import Cards from "./CardsCollection";
 import {
     AiFillGithub,
  
@@ -11,8 +12,22 @@ import {
 } from "react-icons/ai";
 
 import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
-import content from './content.json';
+import content from '../../Data/content.json';
 
+import Features from "./Features";
+
+import FAQ from "../FAQ/Faq";
+import Partner from "./Partner";
+import Aboutus from "./About";
+import Acc from "./CardsCollection";
+
+import Gal from "./Gallery";
+
+import Why from "./Why";
+
+import Team from "../utils/Member";
+
+import Contact from "../Contact/Contact"; 
 
 
 function Home2() {
@@ -20,6 +35,9 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
+
+      <Aboutus />
+
       {content.map((section, index) => (
         <Sec 
           key={index}
@@ -27,13 +45,30 @@ function Home2() {
           paragraph={section.paragraph} 
           image={require(`../../Assets/${section.image}`)}
           title={section.title}
+          
         />
       ))}
+<Why />      
+
+<Gal />
+
+<Features title={"Features"} paragraph={" Explore our collection and discover the features"} />
+
+<Cards />
+<Partner />
+<Team />
+
+
+
+
+<FAQ />
+
+<Contact />
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              <span className="purple">Feel free to connect </span>with us
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
