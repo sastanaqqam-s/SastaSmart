@@ -5,7 +5,7 @@ import lists from "../../Data/Why.json";
 
 function Why() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px", paddingTop: "100px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "50px", paddingTop: "40px" }}>
       
 
       {lists.map((row, index) => (

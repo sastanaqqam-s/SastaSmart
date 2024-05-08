@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../../Assets/logo2.png";
+import logodark from "../../Assets/logo3.png";
+import logowhite from "../../Assets/logo2.png";
 import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
+  
  
 } from "react-icons/ai";
+
+import { LuContact } from "react-icons/lu";
+import { IoDocumentsOutline } from "react-icons/io5";
+
 import { MdExplore } from "react-icons/md";
 import { BsWatch } from "react-icons/bs";
 
@@ -42,7 +47,7 @@ function NavBar() {
     >
       <Container style={{paddingLeft:0}}>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={navColour ? logowhite : logodark } className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -57,7 +62,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)} className={navColour ? "navwhite" : "navblue" }>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
@@ -71,14 +76,15 @@ function NavBar() {
                   scrollTo("model");
                   updateExpanded(false);
                 }}
+                className={navColour ? "navwhite" : "navblue" }
               >
                 <BsWatch style={{ marginBottom: "2px" }} /> Model
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <MdExplore style={{ marginBottom: "2px" }} /> Pitchdeck
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}  className={navColour ? "navwhite" : "navblue" } >
+                <IoDocumentsOutline style={{ marginBottom: "2px" }} /> Pitchdeck
               </Nav.Link>
             </Nav.Item>
 
@@ -91,8 +97,9 @@ function NavBar() {
                   scrollTo("contactus");
                   updateExpanded(false);
                 }}
+                className={navColour ? "navwhite" : "navblue" }
               >
-                <AiOutlineFundProjectionScreen
+                <LuContact 
                   style={{ marginBottom: "2px" }}
                 />
               Contact

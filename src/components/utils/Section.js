@@ -9,8 +9,10 @@ const Section = ({ order, paragraph, image, title }) => {
   return (
     <Row className="section-images" >
       <Col md={8} className={order === 0 ? "order-md-1" : "order-md-2"}>
-        <h1 className='titles' style={{ fontSize: "2.6em" }}>
+        <h1 className='titles' style={{ fontSize: "2.3em",position:"relative" }}>
           {title}
+
+     
         </h1>
         <p className="home-about-body">
           {paragraph}
@@ -23,7 +25,7 @@ const Section = ({ order, paragraph, image, title }) => {
             src={image}
             className="img-fluid"
             alt="avatar"
-            style={{ height: "300px" }}
+            style={{maxHeight:"360px"}}
             
           />
         </Tilt>

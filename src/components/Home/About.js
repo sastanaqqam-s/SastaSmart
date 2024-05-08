@@ -12,11 +12,11 @@ const About = () => {
       <Col md={12} >
       
         <h1 className='titles' style={{ fontSize: "2.0em" }} data-aos="zoom-in">
-          Presentation
+        Our Challenge
         </h1>
         <p className="home-about-body">
-        We offer THE SOLUTION that will transform how you perceive a watch. Our company specializes in designing, developing, and deploying Internet of Things (IoT) technologies specifically for watches. We create systems and software that empower your
-         classic watches to become connected, and capable of collecting, analyzing, and transmitting data through an application.	
+        As we stand in 2024, the choice remains challenging for many:do we abandon our treasured vintage watches, pieces that are more than timekeepers, but stories on our wrists, in favor of the modern functionality of a connected smartwatch? 
+        Must we forget the elegance that complements our taste for the convenience of being plugged into the digital world?
         </p>
       </Col>
       <Col md={4} style={{textAlign:"center",display:"none"}}>

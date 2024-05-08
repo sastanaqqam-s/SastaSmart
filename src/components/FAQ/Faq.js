@@ -21,6 +21,12 @@ const data = {
             title: "Will the integration of this technology affect the aesthetics of the watch?",
             content: "No, the microchip is designed to be compact and discreet, ensuring that it does not disrupt the elegant aesthetics that define our luxury watches.",
         },
+        {
+            title:"Can the watch receive updates after purchase?",
+           content:"Yes, the chip in our watches can receive software updates through a companion app, allowing us to enhance performance and add new features without any physical intervention "
+            
+
+        }
     ],
 };
 
