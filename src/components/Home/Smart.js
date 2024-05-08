@@ -80,10 +80,13 @@ your cherished timepieces.where luxury meets functionality
              
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20}} className="mobile-min-height">
-          
-                  <HomeImage3D />
-                  
+            <Col md={5}  className="imagebanner">
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "500px",borderBottomRightRadius:"100px" }}
+              />
             </Col>
           
           </Row>
