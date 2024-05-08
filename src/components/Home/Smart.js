@@ -64,7 +64,7 @@ your cherished timepieces.where luxury meets functionality
         </Col>
         <Col md={4}> <button className="explore" >
         
-                      APPLEssss
+                      APPLE
                       <BsApple style={{ color: "white",fontSize:28,marginLeft: "5px" }}  />
         </button></Col>
         <Col md={4}><button className="explore" >
