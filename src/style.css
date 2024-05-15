@@ -1688,7 +1688,7 @@ z-index: -1;
   }
   .sensor::before{display: none;}
   .card-work{
-    padding:50px
+    padding:60px
   }
 }
 
