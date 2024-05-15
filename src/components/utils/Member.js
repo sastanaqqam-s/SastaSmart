@@ -4,8 +4,32 @@
 import React from 'react';
 
 import Mem from "./Cardteam";
-import lists from "../../Data/Features.json";
+
 import { Row, Col } from "react-bootstrap";
+
+const lists=[
+{
+  "name":"Samy B",
+  "image":"samy-team.jpg",
+  "title":"Digital marketing manager"
+},
+{
+  "name":"Mohamed azzi",
+  "image":"azzi-team.jpg",
+  "title":"Head manager"
+},
+{
+  "name":"Moundhir Bachene",
+  "image":"moundhir-team.jpg",
+  "title":"Software engineer"
+},
+{
+  "name":"Tebbani nassim",
+  "image":"nassim-team.jpg",
+  "title":"Graphic Designer"
+}
+
+]
 
 const Feature = ({data}) => {
   return (
@@ -16,7 +40,7 @@ const Feature = ({data}) => {
           TEAM
         </h1>
         <p className="feature-paragraph">
-         my eam
+      
         </p>
       </Col>
 
