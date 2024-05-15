@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FaLinkedin } from "react-icons/fa";
-import t from "../../Assets/team/azzi-team.jpg";
+
 const Cardt = ({data}) => {
   return (
    

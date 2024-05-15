@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Row, Col } from "react-bootstrap";
-import des from "../../Assets/step1.png";
+
 const CardWork = ({data}) => {
   return (
    

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
-import { useInView } from 'react-intersection-observer'; // Import useInView hook
+
 
 const Section = ({ order, paragraph, image, title }) => {
 

@@ -1,12 +1,8 @@
 import React from "react";
 import { Row, Col,Container } from "react-bootstrap";
-import Dec from "./HomeImage3D";
-import gray from "../../Assets/11.png";
+
 import gray2 from "../../Assets/screen.jpg";
-import gray3 from "../../Assets/3.png";
-import gray4 from "../../Assets/4.png";
-import b2 from "../../Assets/b2.png";
-import b3 from "../../Assets/b3.png";
+
 import { RiChatHistoryFill } from "react-icons/ri";
 import { MdOutlineSpatialTracking } from "react-icons/md";
 import { MdGpsFixed } from "react-icons/md";

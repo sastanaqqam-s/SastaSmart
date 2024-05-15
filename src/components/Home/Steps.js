@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import p1 from "../../Assets/old1.png";
 import p2 from "../../Assets/old2.png";
 import p3 from "../../Assets/old3.png";
-import { CiStar } from "react-icons/ci";
+
 export default function Steps() {
     return (
       <Row className="steps">
