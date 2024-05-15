@@ -43,7 +43,7 @@ function Home() {
               <p className="banner-text" style={{ textAlign: "justify", fontSize: 19,paddingTop:10,fontWeight:"500" }}>
               DIVE IN THE FUTURE  KEEP YOUR 
               <span className="wave" role="img" aria-labelledby="wave" style={{paddingLeft:"5px"}}> <Type />  </span>
-             
+              <span className="res"> CLASS </span>
               </p>
               <p className="banner-text" style={{ textAlign: "justify", fontSize: 19,paddingTop:10 }}>
               

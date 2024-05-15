@@ -259,6 +259,7 @@ button:focus {
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
+ 
 }
 
 @keyframes wave-animation {
@@ -621,6 +622,21 @@ margin-top: 100px;
     text-align: center !important;
   }
 }
+
+@media (min-width: 992px) {
+  .res{
+   display: none;
+  }
+  
+ }
+
+@media (max-width: 992px) {
+ .wave{
+  display: none;
+ }
+ 
+}
+
 
 .footer h3 {
   font-size: 1em;
