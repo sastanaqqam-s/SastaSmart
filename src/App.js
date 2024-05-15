@@ -19,27 +19,17 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
+  
   return (
     <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      
+      <div className="App" >
         <Navbar />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Smart />} />
       
-          <Route path="/about" element={<Smart />} />
-          <Route path="/sastasmart" element={<Smart />} />
+        
          
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>

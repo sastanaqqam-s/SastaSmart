@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import Dec from "./HomeImage3D";
+ import Dec from "./HomeImage3D";
 import gray from "../../Assets/11.png";
 import gray2 from "../../Assets/2.png";
 import gray3 from "../../Assets/3.png";

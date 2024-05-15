@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import { Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import image from "../../Assets/watch.gif";

@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/banner.webp";
-import Particle from "../utils/Particle";
+
 import Home2 from "./Home2";
 
 import { BsApple } from "react-icons/bs";
 import Type from "../utils/Type";
-/*import HomeImage3D from "./HomeImage3D";*/
+
 import { DiAndroid } from "react-icons/di";
 
 import { SiHarmonyos } from "react-icons/si";
@@ -15,7 +15,7 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-      <Particle />
+      
         <Container className="home-content">
           <Row>
        

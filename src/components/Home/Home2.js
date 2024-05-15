@@ -30,7 +30,7 @@ import Team from "../utils/Member";
 import Contact from "../Contact/Contact"; 
 
 
-import im from "../../Assets/watch.gif";
+//import im from "../../Assets/watch.gif";
 import Steps from "./Steps";
 
 import Phone from "./Phone";
@@ -181,13 +181,7 @@ function Home2() {
             
 <div className="video-container">
       
-      <img
-            src={im}
-            className="img-fluid"
-            alt="avatar"
-            
-            style={{paddingTop:"80px"}}
-          />
+      
 
     </div>
             </Col>

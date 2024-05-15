@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Cardt = ({data}) => {
   return (
    
-    <>
+    
   <div className="profile">
   <div className="profile-image">
     <img src={require(`../../Assets/team/${data.image}`)} />
@@ -23,7 +23,7 @@ const Cardt = ({data}) => {
 
 
   
-</>
+
    
   );
 };
