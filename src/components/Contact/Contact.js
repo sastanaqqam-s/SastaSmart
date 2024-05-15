@@ -15,12 +15,13 @@ const ContactUs = () => {
 
   return (
     <div className="contact-form" id="contactus">
-      <h2>Contact Us</h2>
+      <h2>CONTACT</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Name</label>
           <input
             type="text"
+            placeholder='Name'
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -29,6 +30,7 @@ const ContactUs = () => {
         <div className="form-group">
           <label>Email</label>
           <input
+          placeholder='Email'
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -38,6 +40,7 @@ const ContactUs = () => {
         <div className="form-group">
           <label>Message</label>
           <textarea
+            placeholder='Message'
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required

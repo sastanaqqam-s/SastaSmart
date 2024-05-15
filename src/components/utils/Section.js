@@ -25,7 +25,7 @@ const Section = ({ order, paragraph, image, title }) => {
             src={image}
             className="img-fluid"
             alt="avatar"
-            style={{maxHeight:"360px"}}
+            style={{maxHeight:"400px"}}
             
           />
         </Tilt>

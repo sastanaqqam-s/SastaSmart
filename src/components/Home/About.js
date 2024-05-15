@@ -7,12 +7,12 @@ const About = () => {
 
 
   return (
-    <Row className="aboutus" style={{position:"relative"}}>
+    <Row className="aboutus" style={{position:"relative"}} data-aos="zoom-in">
        
       <Col md={12} >
       
-        <h1 className='titles' style={{ fontSize: "2.0em" }} data-aos="zoom-in">
-        Our Challenge
+        <h1 className='titles' style={{ fontSize: "2.0em" }} >
+        CHALLENGES
         </h1>
         <p className="home-about-body">
         As we stand in 2024, the choice remains challenging for many:do we abandon our treasured vintage watches, pieces that are more than timekeepers, but stories on our wrists, in favor of the modern functionality of a connected smartwatch? 

@@ -5,10 +5,11 @@ import lists from "../../Data/Features.json";
 
 function Techstack({ title, paragraph }) {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px", paddingTop: "100px",position:"relative" }}>
+    
+    <Row  className="features" >
       
       <Col xs={12}>
-        <h1 className='titles' style={{ fontSize: "2.6em" }} data-aos="zoom-in">
+        <h1 className='titles' style={{ fontSize: "2.6em" }}>
           {title}
         </h1>
         <p className="feature-paragraph">

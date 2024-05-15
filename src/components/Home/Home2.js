@@ -15,11 +15,11 @@ import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
 import content from '../../Data/content.json';
 
 import Features from "./Features";
-
+import Works from "./Works";
 import FAQ from "../FAQ/Faq";
 import Partner from "./Partner";
 import Aboutus from "./About";
-import Acc from "./CardsCollection";
+
 
 import Gal from "./Gallery";
 
@@ -29,16 +29,19 @@ import Team from "../utils/Member";
 
 import Contact from "../Contact/Contact"; 
 
-import vid from "../../Assets/watch1.mp4";
 
+import im from "../../Assets/watch.gif";
+import Steps from "./Steps";
+
+import Phone from "./Phone";
 
 const why=[
     {
       "order": 1,
       
       "paragraph": "choose us for our innovative integration of GPS and health tracking technologies in watch bands, enhancing both functionality and market appeal. Our approach not only sets your product apart but offers also : ",
-      "image": "fe.jpg",
-      "title":"Why Choose SastanaSmart?"
+      "image": "piece2.png",
+      "title":"WHY SASTASMART?"
     }];
 
     const sensor=[
@@ -50,12 +53,21 @@ const why=[
         "title":"SastaSmart Sensor in details"
       }];
 
+
+      const phone=[{
+           "order":1,
+           "paragraph":"Energy is supplied by our efficient Battery , designed to optimize longevity and minimize charging cycles, ensuring use",
+           "image":"screen.png",
+           "title":"SASTASMART Application"
+
+      }];
+
 function Home2() {
   
 
 
   return (
-    <Container fluid className="home-about-section" id="about" style={{padding:"0"}}>
+    <Container fluid className="home-about-section" id="about" >
       <Container>
 
       <Aboutus />
@@ -70,8 +82,9 @@ function Home2() {
           
         />
       ))}
+      <Steps /> 
 
-<Features title={"Features"} paragraph={" Explore our collection and discover the features"} />  
+<Features title={"FEATURES"} paragraph={" Explore our collection and discover the features"} />  
 {why.map((section, index) => (
         <Sec 
           key={index}
@@ -85,6 +98,11 @@ function Home2() {
 <Why />      
 
 <Gal />
+
+
+
+<Works />
+<Phone />
 <div className="sensor">
 {sensor.map((section, index) => (
         <Sec 
@@ -97,20 +115,19 @@ function Home2() {
         />
       ))}
 </div>
-
+  
 
 <Partner />
+
 <Team />
-
-
 
 
 <FAQ />
 
 
 
-<Contact />
-        <Row>
+
+        <Row style={{display:"none"}}>
           <Col md={12} className="home-about-social">
             
             <p>
@@ -155,12 +172,26 @@ function Home2() {
         </Row>
       
       </Container>
-      <div className="video-container">
-      <video className="fullscreen-video" autoPlay loop muted>
-        <source src={vid} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <Row style={{width:"100%"}}>
+          <Col sm={12} md={7} >
+          <Contact />   
+
+</Col>
+<Col md={5} >
+            
+<div className="video-container">
+      
+      <img
+            src={im}
+            className="img-fluid"
+            alt="avatar"
+            
+            style={{paddingTop:"80px"}}
+          />
+
     </div>
+            </Col>
+</Row>
     </Container>
   );
 }

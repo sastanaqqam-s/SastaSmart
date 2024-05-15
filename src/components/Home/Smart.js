@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/banner.png";
+import homeLogo from "../../Assets/banner.webp";
 import Particle from "../utils/Particle";
 import Home2 from "./Home2";
 
@@ -41,7 +41,7 @@ function Home() {
     </svg>
               </h1>
               <p className="banner-text" style={{ textAlign: "justify", fontSize: 19,paddingTop:10,fontWeight:"500" }}>
-              DIVE IN THE FUTUR  KEEP YOUR 
+              DIVE IN THE FUTURE  KEEP YOUR 
               <span className="wave" role="img" aria-labelledby="wave" style={{paddingLeft:"5px"}}> <Type />  </span>
              
               </p>
