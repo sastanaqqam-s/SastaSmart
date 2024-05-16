@@ -1801,7 +1801,7 @@ html {
             }
   
                 .about .icon-box .title a:hover {
-                    color: #1acc8d;
+                    color: var(--amber-color);
                 }
   
         .about .icon-box .description {
