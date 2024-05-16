@@ -75,6 +75,9 @@ const lists=[
 export default function Team() {
   return (
     <div className='team'>
+       <h1 className='titles' style={{ fontSize: "2.1em",marginBottom:"50px" }}>
+          TEAM
+        </h1>
       <Swiper
         slidesPerView={1}
         spaceBetween={7}
