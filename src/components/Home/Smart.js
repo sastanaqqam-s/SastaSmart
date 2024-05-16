@@ -87,8 +87,8 @@ your cherished timepieces.where luxury meets functionality
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
-                
+                className="img-fluid "
+               
               />
             </Col>
           

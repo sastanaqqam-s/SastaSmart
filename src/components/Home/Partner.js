@@ -7,8 +7,8 @@ export default function Example() {
     return (
       <Row style={{ justifyContent: "center", paddingBottom: "50px",paddingTop:"100px" }}>
       
-      <Col xs={12} md={12} style={{padding:"50px"}}>
-        <h1 className='titles' style={{ fontSize: "2.6em"}}>
+      <Col xs={12} md={12} style={{padding:"8px"}}>
+        <h1 className='titles' style={{ fontSize: "2.1em"}}>
         PARTNERS
         </h1>
         <p className="home-about-body" style={{marginBottom:"50px",textAlign:"center" }}>

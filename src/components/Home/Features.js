@@ -9,7 +9,7 @@ function Techstack({ title, paragraph }) {
     <Row  className="features" >
       
       <Col xs={12}>
-        <h1 className='titles' style={{ fontSize: "2.6em" }}>
+        <h1 className='titles' style={{ fontSize: "2.1em" }}>
           {title}
         </h1>
         <p className="feature-paragraph">

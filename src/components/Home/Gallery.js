@@ -7,13 +7,14 @@ import gray3 from "../../Assets/3.png";
 import gray4 from "../../Assets/4.png";
 import b2 from "../../Assets/b2.png";
 import b3 from "../../Assets/b3.png";
-
+import b6 from "../../Assets/b6.png";
+import b7 from "../../Assets/b7.png";
 function Gallery() {
   return (
     <Row className="section-images" id="model">
       <Col md={7}>
-        <h1 className='titles' style={{ fontSize: "2.6em" }}>
-          MODEL
+        <h1 className='titles' style={{ fontSize: "2.1em" }}>
+          MODELS
         </h1>
         <p className="home-about-body">
         Elevate your traditional watch by attaching our Smart Buckle, designed to seamlessly blend with any standard watch band. This advanced accessory upgrades your classic watch with modern smart features, while preserving its timeless elegance and comfort.
@@ -67,13 +68,13 @@ Constructed from high-quality materials, the Smart Buckle is built to endure dai
               </div>
               <div className="gallery__item">
                 <input type="radio" id="img-7" name="gallery" className="gallery__selector" />
-                <img className="gallery__img" src={b2} alt="" />
-                <label htmlFor="img-7" className="gallery__thumb"><img src={b2} alt="" /></label>
+                <img className="gallery__img" src={b6} alt="" />
+                <label htmlFor="img-7" className="gallery__thumb"><img src={b6} alt="" /></label>
               </div>
               <div className="gallery__item">
                 <input type="radio" id="img-8" name="gallery" className="gallery__selector" />
-                <img className="gallery__img" src={b3} alt="" />
-                <label htmlFor="img-8" className="gallery__thumb"><img src={b3} alt="" /></label>
+                <img className="gallery__img" src={b7} alt="" />
+                <label htmlFor="img-8" className="gallery__thumb"><img src={b7} alt="" /></label>
               </div>
               
             

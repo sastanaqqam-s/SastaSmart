@@ -10,7 +10,7 @@ function Works() {
     <Row className="works">
       
       <Col xs={12}>
-        <h1 className='titles' style={{ fontSize: "2.6em",paddingBottom:"50px" }}>
+        <h1 className='titles' style={{ fontSize: "2.1em",paddingBottom:"50px" }}>
           HOW IT WORKS
         </h1>
        

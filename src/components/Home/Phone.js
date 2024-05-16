@@ -17,11 +17,12 @@ function Phone() {
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "400px",borderBottomRightRadius:"100px" }}
+                data-aos="fade-up"
               />
         </div>
-        <div className="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" >
-          <h3>SASTASMART APPLICATION</h3>
-          <p>Transform your favorite watch into a powerful health tracker. Our new mobile app and innovative buckle monitor key health data and provide real-time GPS tracking, letting you stay connected and informed with ease and effeciency</p>
+        <div className="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center" >
+          <h3 style={{fontSize:"2.1em"}}>SASTASMART APPLICATION</h3>
+          <p className="home-about-body">Transform your favorite watch into a powerful health tracker. Our new mobile app and innovative buckle monitor key health data and provide real-time GPS tracking, letting you stay connected and informed with ease and effeciency</p>
           <div className="icon-box" data-aos="zoom-in">
             <div className="icon"><RiChatHistoryFill className="de" /></div>
             <h4 className="title"><a href>fits into your traditional watch band</a></h4>
