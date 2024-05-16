@@ -23,7 +23,7 @@
     <meta property="og:title" content="SASTASMART">
     <meta property="og:description" content="bridges the gap between tradition and technology, offering a seamless integration of smart features into your cherished timepieces. where luxury meets functionality watchss">
     <meta property="og:image"
-          content="">
+          content="%PUBLIC_URL%/b.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -31,10 +31,10 @@
     <meta name="twitter:description" content="bridges the gap between tradition and technology, offering a seamless integration of smart features into your cherished timepieces. where luxury meets functionality watchs">
     <meta name="twitter:image"
           content="">
-
-        <!-- Twitter M  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-       -->
-
+ 
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+       
+    
     <style>
 
         .bod{
@@ -64,11 +64,16 @@
 
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
- <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 
   <script>
+     AOS.init({
+      
+    });
+    /*
     AOS.init();
 
- /*
+ 
      // Function to handle rotation based on scroll
      window.addEventListener('scroll', function () {
             // Get the scroll position

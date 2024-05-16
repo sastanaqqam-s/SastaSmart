@@ -18,8 +18,8 @@ function Techstack({ title, paragraph }) {
       </Col>
 
       {lists.map((row, index) => (
-        <Col key={index} xs={12} md={3} className="tech-icons" data-aos="zoom-in">
-          <Ft data={row} />
+        <Col key={index} xs={12} md={3} className="tech-icons"  >
+          <Ft data={row}  />
         </Col>
       ))}
     </Row>

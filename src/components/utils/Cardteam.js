@@ -2,13 +2,16 @@ import React from 'react';
 
 import { FaLinkedin } from "react-icons/fa";
 
+
 const Cardt = ({data}) => {
   return (
    
     
   <div className="profile">
   <div className="profile-image">
+  
     <img src={require(`../../Assets/team/${data.image}`)} />
+    
   </div>
   <h2 className="profile-username">{data.name}</h2>
   <small className="profile-user-handle">{data.title}</small>

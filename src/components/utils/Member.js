@@ -25,7 +25,7 @@ const lists=[
 },
 {
   "name":"Tebbani nassim",
-  "image":"nassim-team.jpg",
+  "image":"nassim.webp",
   "title":"Graphic Designer"
 }
 
@@ -45,7 +45,7 @@ const Feature = ({data}) => {
       </Col>
 
       {lists.map((row, index) => (
-        <Col key={index} xs={12} md={3}  data-aos="zoom-in">
+        <Col key={index} xs={12} md={3}  >
           <Mem data={row} />
         </Col>
       ))}

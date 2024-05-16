@@ -8,9 +8,9 @@ import { BsWatch } from "react-icons/bs";
 const Feature = ({data}) => {
   return (
    
-    <>
+  
  
-<div className="newcard">
+<div className="newcard" data-aos="fade-up"> 
   
   <span className="icon">
           {/* Replace the SVG icon with an image */}
@@ -41,7 +41,7 @@ const Feature = ({data}) => {
   </div>
 </div>
   
-</>
+
    
   );
 };

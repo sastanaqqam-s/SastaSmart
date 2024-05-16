@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Row, Col } from "react-bootstrap";
-import Tilt from "react-parallax-tilt";
+
 
 
 const Section = ({ order, paragraph, image, title }) => {
@@ -19,16 +19,16 @@ const Section = ({ order, paragraph, image, title }) => {
         </p>
       </Col>
       <Col md={4} className={order === 0 ? "order-md-2" : "order-md-1"}>
-        <Tilt>
-          <img data-aos="zoom-in"
+      
+          <img 
     
             src={image}
             className="img-fluid"
             alt="avatar"
             style={{maxHeight:"400px"}}
-            
+            data-aos="fade-up"
           />
-        </Tilt>
+        
       </Col>
     </Row>
   );

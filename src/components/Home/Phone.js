@@ -22,17 +22,17 @@ function Phone() {
         <div className="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" >
           <h3>SASTASMART APPLICATION</h3>
           <p>Transform your favorite watch into a powerful health tracker. Our new mobile app and innovative buckle monitor key health data and provide real-time GPS tracking, letting you stay connected and informed with ease and effeciency</p>
-          <div className="icon-box" data-aos="zoom-in" data-aos-delay={100}>
+          <div className="icon-box" data-aos="zoom-in">
             <div className="icon"><RiChatHistoryFill className="de" /></div>
             <h4 className="title"><a href>fits into your traditional watch band</a></h4>
            
           </div>
-          <div className="icon-box" data-aos="zoom-in" data-aos-delay={300}>
+          <div className="icon-box" data-aos="zoom-in" >
           <div className="icon"><MdOutlineSpatialTracking className="de" /></div>
             <h4 className="title"><a href>tracks your health data</a></h4>
            
           </div>
-          <div className="icon-box" data-aos="zoom-in" data-aos-delay={200}>
+          <div className="icon-box" data-aos="zoom-in" >
             <div className="icon"><MdGpsFixed  className="de" /></div>
             <h4 className="title"><a href>tracks and transmits GPS location in real time to the app</a></h4>
            

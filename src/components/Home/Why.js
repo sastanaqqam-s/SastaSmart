@@ -9,7 +9,7 @@ function Why() {
       
 
       {lists.map((row, index) => (
-        <Col key={index} xs={12} md={4}  data-aos="zoom-in">
+        <Col key={index} xs={12} md={4} >
           <Cr data={row} />
         </Col>
       ))}

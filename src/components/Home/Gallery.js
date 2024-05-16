@@ -16,17 +16,8 @@ function Gallery() {
           MODEL
         </h1>
         <p className="home-about-body">
-          The Onyx SuperKnit Bracelet
-          Experience unparalleled comfort and durability with 
-          the Onyx SuperKnit bracelet. This ultra-durable, 
-          ultra-comfortable accessory is more than just a band.
-          <br />
-          Crafted from premium materials, the Onyx SuperKnit 
-          bracelet is designed to withstand the rigors of daily life 
-          while keeping style and comfort at the forefront. Its 
-          elegant design and superior build quality make it the 
-          perfect companion for the Sastana sensor, ensuring 
-          you stay connected in style.
+        Elevate your traditional watch by attaching our Smart Buckle, designed to seamlessly blend with any standard watch band. This advanced accessory upgrades your classic watch with modern smart features, while preserving its timeless elegance and comfort.
+Constructed from high-quality materials, the Smart Buckle is built to endure daily wear and tear, ensuring that both style and connectivity are enhanced. Upgrade your timepiece with this innovative accessory and remain stylishly connected.
         </p>
         <div className="d3">
           <Dec />

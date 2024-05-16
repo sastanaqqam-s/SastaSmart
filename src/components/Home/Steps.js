@@ -7,6 +7,7 @@ import p3 from "../../Assets/old3.png";
 
 export default function Steps() {
     return (
+      
       <Row className="steps">
       
       

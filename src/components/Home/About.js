@@ -2,12 +2,14 @@ import React from 'react';
 import { Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import image from "../../Assets/watch.gif";
+
 const About = () => {
  
 
 
   return (
-    <Row className="aboutus" style={{position:"relative"}} data-aos="zoom-in">
+   
+    <Row className="aboutus" style={{position:"relative"}} data-aos="fade-up" >
        
       <Col md={12} >
       
@@ -33,6 +35,7 @@ const About = () => {
      
      
     </Row>
+   
   );
 };
 

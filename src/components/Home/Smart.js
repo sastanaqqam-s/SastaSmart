@@ -11,8 +11,11 @@ import { DiAndroid } from "react-icons/di";
 
 import { SiHarmonyos } from "react-icons/si";
 
+
+
 function Home() {
   return (
+    
     <section>
       <Container fluid className="home-section" id="home">
       
@@ -85,7 +88,7 @@ your cherished timepieces.where luxury meets functionality
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "500px",borderBottomRightRadius:"100px" }}
+                
               />
             </Col>
           
@@ -96,10 +99,11 @@ your cherished timepieces.where luxury meets functionality
       </Container>
       
       <Home2 />
-
+      
       
 
     </section>
+   
   );
 }
 

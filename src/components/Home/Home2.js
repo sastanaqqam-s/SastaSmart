@@ -40,7 +40,7 @@ const why=[
       "order": 1,
       
       "paragraph": "choose us for our innovative integration of GPS and health tracking technologies in watch bands, enhancing both functionality and market appeal. Our approach not only sets your product apart but offers also : ",
-      "image": "piece2.png",
+      "image": "s4.png",
       "title":"WHY SASTASMART?"
     }];
 
@@ -69,9 +69,10 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about" >
       <Container>
-
+      
       <Aboutus />
-
+     
+      
       {content.map((section, index) => (
         <Sec 
           key={index}
@@ -82,9 +83,11 @@ function Home2() {
           
         />
       ))}
+      
       <Steps /> 
-
+     
 <Features title={"FEATURES"} paragraph={" Explore our collection and discover the features"} />  
+
 {why.map((section, index) => (
         <Sec 
           key={index}
@@ -172,20 +175,12 @@ function Home2() {
         </Row>
       
       </Container>
-      <Row style={{width:"100%"}}>
-          <Col sm={12} md={7} >
+     
           <Contact />   
 
-</Col>
-<Col md={5} >
-            
-<div className="video-container">
-      
-      
 
-    </div>
-            </Col>
-</Row>
+
+
     </Container>
   );
 }
