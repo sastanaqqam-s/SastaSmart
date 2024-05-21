@@ -11,9 +11,10 @@ import {
  
 } from "react-icons/ai";
 
-import { LuContact } from "react-icons/lu";
-import { IoDocumentsOutline } from "react-icons/io5";
 
+import { LuContact } from "react-icons/lu";
+
+import { MdPhonelinkRing } from "react-icons/md";
 
 import { BsWatch } from "react-icons/bs";
 
@@ -84,7 +85,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}  className={navColour ? "navwhite" : "navblue" } >
-                <IoDocumentsOutline style={{ marginBottom: "2px" }} /> Pitchdeck
+                <MdPhonelinkRing style={{ marginBottom: "2px" }} /> Application
               </Nav.Link>
             </Nav.Item>
 

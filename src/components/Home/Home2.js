@@ -48,9 +48,10 @@ const why=[
       {
         "order": 0,
         
-        "paragraph": "Energy is supplied by our efficient Battery , designed to optimize longevity and minimize charging cycles, ensuring user satisfaction.For user interaction, the Heart Rate Module PCBA is a critical component, providing real-time health monitoring.For the core electronic assembly, our Bluetooth SoC will be the central hub for processing and connectivity, along with the Boost Converter Chip and Overvoltage Protection Chip to ensure device safety and efficiency",
+        "paragraph": "{{bold}}. For user interaction, the Heart Rate Module PCBA is a critical component, providing real-time health monitoring.For the core electronic assembly, our Bluetooth SoC will be the central hub for processing and connectivity, along with the Boost Converter Chip and Overvoltage Protection Chip to ensure device safety and efficiency",
         "image": "pdetails.png",
-        "title":"SastaSmart Sensor in details"
+        "title":"SastaSmart Sensor in details",
+        "bold":"Energy is supplied by our efficient Battery, designed to optimize longevity and minimize charging cycles, ensuring user satisfaction"
       }];
 
 
@@ -80,6 +81,8 @@ function Home2() {
           paragraph={section.paragraph} 
           image={require(`../../Assets/${section.image}`)}
           title={section.title}
+          bold ={section.bold}
+
           
         />
       ))}
@@ -114,7 +117,7 @@ function Home2() {
           paragraph={section.paragraph} 
           image={require(`../../Assets/${section.image}`)}
           title={section.title}
-          
+          bold={section.bold}
         />
       ))}
 </div>

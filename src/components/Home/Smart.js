@@ -1,16 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/banner.webp";
+import homeLogo from "../../Assets/banner2.png";
 
 import Home2 from "./Home2";
-
-import { BsApple } from "react-icons/bs";
+import { FaFileSignature } from "react-icons/fa";
 import Type from "../utils/Type";
-
-import { DiAndroid } from "react-icons/di";
-
-import { SiHarmonyos } from "react-icons/si";
-
 
 
 function Home() {
@@ -57,25 +51,15 @@ your cherished timepieces.where luxury meets functionality
               <div className="buttons">
              
               <Row>
-              <Col md={4}>
+              <Col md={6}>
           
         <button className="explore" >
         
-                      ANDROID
-                      <DiAndroid style={{ color: "white",fontSize:28,marginLeft: "5px" }}  />
+                      PITCHDECK
+                      <FaFileSignature style={{ color: "white",fontSize:25,marginLeft:"10px" }}  />
         </button>
         </Col>
-        <Col md={4}> <button className="explore" >
         
-                      APPLE
-                      <BsApple style={{ color: "white",fontSize:28,marginLeft: "5px" }}  />
-        </button></Col>
-        <Col md={4}><button className="explore" >
-        
-        HARMONYOS
-        
-        <SiHarmonyos style={{ color: "white",fontSize:28,marginLeft: "5px" }}  />
-</button></Col>
 </Row>
       
     </div>
@@ -83,7 +67,7 @@ your cherished timepieces.where luxury meets functionality
              
             </Col>
 
-            <Col md={5}  className="imagebanner">
+            <Col md={5}  className="imagebanner"  >
               <img
                 src={homeLogo}
                 alt="home pic"

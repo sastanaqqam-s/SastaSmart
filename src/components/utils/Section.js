@@ -3,9 +3,9 @@ import { Row, Col } from "react-bootstrap";
 
 
 
-const Section = ({ order, paragraph, image, title }) => {
+const Section = ({ order, paragraph, image, title , bold}) => {
 
-
+  const parts = paragraph.split("{{bold}}");
   return (
     <Row className="section-images" >
       <Col md={8} className={order === 0 ? "order-md-1" : "order-md-2"}>
@@ -15,7 +15,7 @@ const Section = ({ order, paragraph, image, title }) => {
      
         </h1>
         <p className="home-about-body">
-          {paragraph}
+        {parts[0]}<strong>{bold}</strong>{parts[1]}
         </p>
       </Col>
       <Col md={4} className={order === 0 ? "order-md-2" : "order-md-1"}>
@@ -25,7 +25,7 @@ const Section = ({ order, paragraph, image, title }) => {
             src={image}
             className="img-fluid"
             alt="avatar"
-            style={{maxHeight:"400px"}}
+            style={{maxHeight:"420px"}}
             data-aos="fade-up"
           />
         
