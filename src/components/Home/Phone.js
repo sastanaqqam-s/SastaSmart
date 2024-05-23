@@ -13,10 +13,10 @@ import { SiHarmonyos } from "react-icons/si";
 
 function Phone() {
   return (
-  <Container id="about" className="about">
+  <Container id="phone" className="about">
     <div className="container">
       <div className="row">
-        <div className="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" style={{position:"relative"}} >
+        <div className="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch order-md-h" style={{position:"relative"}} >
         <img
                 src={gray2}
                 alt="home pic"
@@ -24,7 +24,7 @@ function Phone() {
                 style={{ maxHeight: "400px",borderBottomRightRadius:"100px"}}
                 data-aos="fade-up"
               />
-           <br />
+          
             <div className="groupapp">
               <DiAndroid  className="icn" />
               <FaAppStoreIos  className="icn" />

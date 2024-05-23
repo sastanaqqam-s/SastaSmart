@@ -21,14 +21,14 @@ import { Pagination } from 'swiper/modules';
 
 const lists=[
   {
-    "name":"Samy B",
+    "name":"Samy Benbahmed",
     "image":"samy-team.jpg",
-    "title":"Digital marketing manager"
+    "title":"Chief operating officer"
   },
   {
     "name":"Mohamed azzi",
     "image":"azzi-team.jpg",
-    "title":"Head manager"
+    "title":"Chief Business Developement Officer"
   },
   {
     "name":"Adnan Rebba",
@@ -37,11 +37,11 @@ const lists=[
   },
   {
     "name":"Tebbani nassim",
-    "image":"nassimpic.png",
+    "image":"nassim-team.jpg",
     "title":"Graphic Designer"
   },
   {
-    "name":"Hinde Daoudi",
+    "name":"Hind Daoudi",
     "image":"hinde-team.jpg",
     "title":"HR Manager"
   },

@@ -5,7 +5,7 @@ import p1 from "../../Assets/p1.png";
 import p2 from "../../Assets/p2.png";
 export default function Example() {
     return (
-      <Row style={{ justifyContent: "center", paddingBottom: "50px",paddingTop:"100px" }}>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px",marginTop:"120px" }}>
       
       <Col xs={12} md={12} style={{padding:"8px"}}>
         <h1 className='titles' style={{ fontSize: "2.1em"}}>

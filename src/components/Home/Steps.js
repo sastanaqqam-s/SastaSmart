@@ -8,7 +8,7 @@ import p3 from "../../Assets/old3.png";
 export default function Steps() {
     return (
       
-      <Row className="steps">
+      <Row className="steps" >
       
       
       <Col xs={6} md={3} className="tech-icons">

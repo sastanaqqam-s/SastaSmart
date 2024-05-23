@@ -37,12 +37,12 @@ function Home() {
       </g>
     </svg>
               </h1>
-              <p className="banner-text" style={{ textAlign: "justify", fontSize: 19,paddingTop:10,fontWeight:"500" }}>
+              <p className="banner-text" style={{ textAlign: "justify",paddingTop:10,fontWeight:"500" }}>
               DIVE IN THE FUTURE  KEEP YOUR 
               <span className="wave" role="img" aria-labelledby="wave" style={{paddingLeft:"5px"}}> <Type />  </span>
               <span className="res"> CLASS </span>
               </p>
-              <p className="banner-text" style={{ textAlign: "justify", fontSize: 19,paddingTop:10 }}>
+              <p className="banner-text" style={{ textAlign: "justify",paddingTop:10 }}>
               
               let's bridges the gap between tradition and technology, offering a seamless integration of smart features into 
 your cherished timepieces.where luxury meets functionality
@@ -68,6 +68,9 @@ your cherished timepieces.where luxury meets functionality
             </Col>
 
             <Col md={5}  className="imagebanner"  >
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" id="svgback">
+  <path fill="#020F26" d="M43.5,-44.6C58.4,-39.4,73.8,-27.6,75.4,-14C77,-0.4,64.7,14.9,53.7,28.1C42.7,41.4,32.9,52.5,21.4,54.9C10,57.4,-3.2,51.2,-18.4,47.1C-33.6,43.1,-50.8,41.2,-58.4,31.8C-66.1,22.5,-64.1,5.8,-63.1,-13.1C-62.2,-32,-62.2,-53.1,-51.9,-59.1C-41.5,-65.1,-20.8,-56,-3.2,-52.2C14.3,-48.3,28.6,-49.8,43.5,-44.6Z" transform="translate(100 100)" />
+</svg>
               <img
                 src={homeLogo}
                 alt="home pic"

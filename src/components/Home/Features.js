@@ -6,7 +6,7 @@ import lists from "../../Data/Features.json";
 function Techstack({ title, paragraph }) {
   return (
     
-    <Row  className="features" >
+    <Row  className="features" style={{marginTop:"80px"}} >
       
       <Col xs={12}>
         <h1 className='titles' style={{ fontSize: "2.1em" }}>

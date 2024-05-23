@@ -34,6 +34,7 @@ import Contact from "../Contact/Contact";
 import Steps from "./Steps";
 
 import Phone from "./Phone";
+import Details from "./Details";
 
 const why=[
     {
@@ -90,7 +91,8 @@ function Home2() {
       <Steps /> 
      
 <Features title={"FEATURES"} paragraph={" Explore our collection and discover the features"} />  
-
+<Details />
+<div className="all">
 {why.map((section, index) => (
         <Sec 
           key={index}
@@ -102,14 +104,14 @@ function Home2() {
         />
       ))}   
 <Why />      
-
+</div>
 <Gal />
 
 
 
 <Works />
 <Phone />
-<div className="sensor">
+<div className="sensor"   style={{marginTop:"80px"}}>
 {sensor.map((section, index) => (
         <Sec 
           key={index}
