@@ -377,7 +377,11 @@ h1::before{
 }
 .d3{
     position: relative;
-    height: 400px;
+    height: 450px;
+   
+}
+.d3:hover{
+    cursor:grab;
 }
 .d3::before{
     content: "";
@@ -1715,9 +1719,42 @@ position: absolute;
     .sticky .navbar-toggler span {
         
         background-color: white ;}
+
+        .navbar .nav-link {color:white !important;
+        background-color: var(--vert);
+        }
+        
 }
 
 
 .hide{
     display: none;
 }
+
+
+
+/* Add this CSS in your main CSS file or a new CSS file and import it */
+.scroll-button {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(2, 15, 38, 0.7);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 10px 10px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s, transform 0.3s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  }
+  
+  .scroll-button:hover {
+   
+    transform: scale(1.1);
+  }
+  

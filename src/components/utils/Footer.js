@@ -59,11 +59,17 @@ function Footer() {
           {/* Footer Menu*/}
           <div className="footer_menu">
             <ul>
-              <li><a href="risk">Risk disclosure</a></li>
-              <li><a href="cookies">Cookies policy </a></li>
-              <li style={{display: 'none'}}><a href="pcp">Prohibited countries policy</a></li>
-              <li><a href="GDPR">GDPR</a></li>
-              <li><a href="customer">Customer acceptance policy</a></li>
+            <li><a href="privacy"><h5 className="widget-title">Values</h5></a></li>
+              <li><a href="terms">Integrity</a></li>
+              <li><a href="kyc">Innovation</a></li>
+              <li><a href="aml">Teamwork</a></li>
+              <li><a href="terms">Responsibility</a></li>
+              <li><a href="kyc">Respect</a></li>
+              <li><a href="aml">Customer Focus</a></li>
+
+              <li><a href="terms">Responsibility</a></li>
+              <li><a href="kyc">Inclusivity, durability</a></li>
+              <li><a href="aml">Transparency</a></li>
             </ul>
           </div>
         </div>

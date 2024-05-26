@@ -28,7 +28,7 @@ export default function Details() {
           />
            
            <ul >
-             <li><h4 >KDEER </h4></li>
+             <li><h4 >KRONOVA </h4></li>
                 <li>Health monitoring</li>
                 <li className="barre">GPS</li>
                 <li className="barre">E-SIM</li>
@@ -47,7 +47,7 @@ export default function Details() {
           />
           
           <ul >
-             <li><h4 >KDEER </h4></li>
+             <li><h4 >KDEER</h4></li>
                 <li>Health monitoring</li>
                 <li>GPS</li>
                 <li>E-SIM</li>
@@ -65,7 +65,7 @@ export default function Details() {
           />
          
          <ul >
-             <li><h4 >KDEER </h4></li>
+             <li><h4 >REETHMIQ  </h4></li>
                 <li>Health monitoring</li>
                 <li >GPS</li>
                 <li className="barre">E-SIM</li>

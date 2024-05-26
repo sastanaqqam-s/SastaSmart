@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
-import image from "../../Assets/watch.gif";
-
+/*import image from "../../Assets/watch.gif";
+*/
 const About = () => {
  
 
@@ -21,17 +21,7 @@ const About = () => {
         Must we forget the elegance that complements our taste for the convenience of being plugged into the digital world?
         </p>
       </Col>
-      <Col md={4} style={{textAlign:"center",display:"none"}}>
-        <Tilt>
-          <img data-aos="fade-right"
-            src={image}
-            className="img-fluid"
-            alt="avatar"
-            style={{ height: "300px" }}
-           
-          />
-        </Tilt>
-      </Col>
+     
      
      
     </Row>

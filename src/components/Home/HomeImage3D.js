@@ -1,7 +1,8 @@
 import React, { Suspense, useState, useEffect, useRef, useCallback } from 'react';
 import { Canvas } from 'react-three-fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { DirectionalLight, AmbientLight, Color } from 'three'; // Import AmbientLight for adding ambient light
+import { DirectionalLight, AmbientLight, Color, MeshStandardMaterial } from 'three';
+import { Environment } from '@react-three/drei'; // Import Environment from drei
 
 function HomeImage3D() {
   const [model, setModel] = useState(null);
@@ -53,11 +54,11 @@ function HomeImage3D() {
       gltfPath,
       (gltf) => {
         const width = window.innerWidth;
-        const newScaleFactor = width < 768 ? 33.0 : 36.0;
+        const newScaleFactor = width < 768 ? 31.0 : 32.0;
         setScaleFactor(newScaleFactor);
 
         gltf.scene.scale.set(newScaleFactor, newScaleFactor, newScaleFactor);
-        gltf.scene.position.set(0, -2, 0);
+        gltf.scene.position.set(0, -1.38, 0);
 
         // Adjust lighting
         const directionalLight = new DirectionalLight(new Color("#ffffff"), 6); // Set directional light color to white
@@ -78,7 +79,7 @@ function HomeImage3D() {
   }, [gltfPath]);
 
   return (
-    <Canvas
+    <Canvas 
       ref={canvasRef}
       onTouchStart={handleInteractionStart}
       onTouchEnd={handleInteractionEnd}
@@ -89,8 +90,16 @@ function HomeImage3D() {
     >
       <Suspense fallback={null}>
         {model && (
-          <primitive object={model} rotation={[rotation.x, rotation.y, 0]} />
+          <>
+            <primitive object={model} rotation={[rotation.x, rotation.y, 0]} />
+            {/* Add a complete cylinder below the model */}
+            <mesh position={[0, -1.8, 0]} receiveShadow>
+              <cylinderGeometry args={[2, 2, 0.7, 32]} />
+              <meshStandardMaterial color="#020F26" metalness={0.5} roughness={0.5} />
+            </mesh>
+          </>
         )}
+        <Environment preset="forest" /> {/* Add Environment component */}
       </Suspense>
     </Canvas>
   );
