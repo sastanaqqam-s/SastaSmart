@@ -54,7 +54,7 @@ function HomeImage3D() {
       gltfPath,
       (gltf) => {
         const width = window.innerWidth;
-        const newScaleFactor = width < 768 ? 31.0 : 32.0;
+        const newScaleFactor = width < 768 ? 29.0 : 32.0;
         setScaleFactor(newScaleFactor);
 
         gltf.scene.scale.set(newScaleFactor, newScaleFactor, newScaleFactor);

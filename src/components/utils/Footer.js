@@ -6,7 +6,7 @@ import {
 
 
 } from "react-icons/ai";
-import { FaLinkedinIn, FaTelegramPlane, FaInstagram } from "react-icons/fa";
+import { FaTiktok, FaYoutube, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -81,9 +81,12 @@ function Footer() {
           {/* Copywrite Text*/}
           {/* Footer Social Area*/}
           <div className="footer_social_area">
-          <a href="https://t.me/sastanaqqam" data-toggle="tooltip" data-placement="top" title="instgram" data-original-title="instgram"><FaInstagram   /></a>
-            <a href="https://t.me/sastanaqqam" data-toggle="tooltip" data-placement="top" title="linkedin" data-original-title="linkedin"><FaLinkedinIn   /></a>
-            <a href="https://t.me/sastanaqqam" data-toggle="tooltip" data-placement="top" title="telegram" data-original-title="telegram"><FaTelegramPlane   /></a>
+          <a href="https://www.instagram.com/sasta.smart" data-toggle="tooltip" data-placement="top" title="instgram" data-original-title="instgram"><FaInstagram   /></a>
+            <a href="https://www.facebook.com/profile.php?id=61559947952416" data-toggle="tooltip" data-placement="top" title="facebook" data-original-title="facebook"><FaFacebook   /></a>
+            <a href="https://www.youtube.com/channel/UCWdIZjIw748anTOVbR94F_w" data-toggle="tooltip" data-placement="top" title="youtube" data-original-title="youtube"><FaYoutube   /></a>
+            <a href=" https://www.tiktok.com/@sasta.smart" data-toggle="tooltip" data-placement="top" title="tiktok" data-original-title="tiktok"><FaTiktok   /></a>
+            <a href="https://x.com/sasta_smart" data-toggle="tooltip" data-placement="top" title="twitter" data-original-title="twitter"><FaTwitter   /></a>
+            
             
 
           </div>
