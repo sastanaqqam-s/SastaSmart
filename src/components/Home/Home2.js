@@ -16,7 +16,7 @@ import content from '../../Data/content.json';
 
 import Features from "./Features";
 import Works from "./Works";
-import FAQ from "../FAQ/Faq";
+//import FAQ from "../FAQ/Faq";
 import Partner from "./Partner";
 import Aboutus from "./About";
 
@@ -35,7 +35,7 @@ import Steps from "./Steps";
 
 import Phone from "./Phone";
 import Details from "./Details";
-
+/*
 const why=[
     {
       "order": 1,
@@ -62,7 +62,7 @@ const why=[
            "image":"screen.png",
            "title":"SASTASMART Application"
 
-      }];
+      }];*/
 
 function Home2() {
   
@@ -93,7 +93,8 @@ function Home2() {
 <Features title={"FEATURES"} paragraph={" Explore our collection and discover the features"} />  
 <Details />
 <div className="all">
-{why.map((section, index) => (
+
+{/* why.map((section, index) => (
         <Sec 
           key={index}
           order={section.order} 
@@ -102,7 +103,8 @@ function Home2() {
           title={section.title}
         
         />
-      ))}   
+      ))*/} 
+        
 <Why />      
 </div>
 <Gal />
@@ -111,6 +113,8 @@ function Home2() {
 
 <Works />
 <Phone />
+{
+  /*
 <div className="sensor"   style={{marginTop:"80px"}}>
 {sensor.map((section, index) => (
         <Sec 
@@ -123,15 +127,17 @@ function Home2() {
         />
       ))}
 </div>
+
+    */  }
   
 
 <Partner />
 
 <Team />
 
-
+{/*
 <FAQ />
-
+  */}
 
 
 
